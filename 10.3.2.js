@@ -9,3 +9,22 @@ var x3=true;
 
 var x4=undefined;
   console.log(typeof x4);
+
+
+// Неверно понято задание. Ниже написала пример, как нужно было сделать:
+
+let x;
+
+switch (typeof x) {
+  case 'number':
+    console.log('x - число');
+    break;
+  case 'string':
+    console.log('x - строка');
+    break;
+  case 'boolean':
+    console.log('x - булево значение');
+    break;
+  default: 
+    console.log('Тип x не определен');
+}
